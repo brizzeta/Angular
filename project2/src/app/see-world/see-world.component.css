@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item {
+    width: 32%;
+    background-color: aliceblue;
+}
+
+.text {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}

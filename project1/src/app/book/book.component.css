@@ -1,0 +1,49 @@
+h1 {
+    font-size: 1.7em;
+    margin: 30px;
+}
+
+.wrap-choice-book {
+    display: flex;
+    flex-direction: row;
+}
+
+.butts {
+    width: 300px;
+    text-align: center;
+}
+
+ul {
+    width: 300px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+.butt {
+    background-color: rgb(134, 178, 255);
+    cursor: pointer;
+    margin-right: 50px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+.butt:hover {
+    background-color: rgb(117, 155, 221);
+}
+
+.selected {
+    background-color: rgb(117, 155, 221);
+}
+
+.info {
+    text-align: center;
+}
+
+img {
+    height: 300px;
+}

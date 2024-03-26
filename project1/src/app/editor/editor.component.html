@@ -1,0 +1,14 @@
+<section>
+    <div class="butt">
+        <button (click)="changeBold(); changePressed1()" [ngClass] = "{'pressed': isPressed1}">B</button>
+        <button (click)="changeItalic(); changePressed2()" [ngClass] = "{'pressed': isPressed2}">I</button>
+        <button (click)="changeUnder(); changePressed3()" [ngClass] = "{'pressed': isPressed3}">U</button>
+        <button (click)="changeUpper(); changePressed4()" [ngClass] = "{'pressed': isPressed4}">Tt</button>
+    </div>
+    <textarea cols="50" rows="10" [ngClass] = "{
+                                                'bold': isBold,
+                                                'italic': isItalic,
+                                                'underline': isUnderline,
+                                                'upper': isUppercase
+    }"></textarea>
+</section>

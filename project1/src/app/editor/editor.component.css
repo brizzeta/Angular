@@ -1,0 +1,26 @@
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.pressed {
+    color: rgb(178, 184, 189);
+}
+
+button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+

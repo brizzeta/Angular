@@ -7,6 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProviderComponent } from './provider/provider.component';
+import { ViewComponent } from './view/view.component';
+import { EditorComponent } from './editor/editor.component';
+import { IphoneComponent } from './iphone/iphone.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ProviderComponent } from './provider/provider.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    ProviderComponent
+    ProviderComponent,
+    ViewComponent,
+    EditorComponent,
+    IphoneComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

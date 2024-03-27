@@ -11,6 +11,8 @@ import { ViewComponent } from './view/view.component';
 import { EditorComponent } from './editor/editor.component';
 import { IphoneComponent } from './iphone/iphone.component';
 import { BookComponent } from './book/book.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BookComponent } from './book/book.component';
     ViewComponent,
     EditorComponent,
     IphoneComponent,
-    BookComponent
+    BookComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

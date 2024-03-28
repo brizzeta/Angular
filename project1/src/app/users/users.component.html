@@ -1,0 +1,2 @@
+<input type="text" [(ngModel)]="str_user" (click)="addUser()">
+<h1 *ngFor="let user for arr_user">{{ user.charAt(0) | uppercase }}</h1>

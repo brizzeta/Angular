@@ -3,5 +3,5 @@
 <h2>количество: {{ clicks }}</h2>
 <h2>Общая сумма: {{ totalPrices }}$</h2>
 <div *ngFor="let product of products; let i = index">
-  <app-child [product]="product" (onChanged)="onChanged($event)"></app-child>
+  <app-child [product]="product" (onChanged)="onChanged($event, i)"></app-child>
 </div>

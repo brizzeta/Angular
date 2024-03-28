@@ -19,9 +19,9 @@ export class ParentComponent {
   getTotalPrices() {
     return this.products.reduce((total, product) => total + (product.price * product.quantity), 0);
   }
-  onChanged(event: boolean) {
-    console.log(event);
-    event == true ? this.clicks++ : this.clicks--;
+  onChanged(event: boolean, i:number) {
+    this.products[i].quantity += event == true ? 1 : -1;
     this.totalPrices = this.getTotalPrices();
+    
   }
 }

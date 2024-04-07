@@ -1,0 +1,26 @@
+<section>
+    <div class="inputs">
+        <input class="name" type="text" [(ngModel)]="name">
+        <input class="salary" type="number" [(ngModel)]="salary">
+        <input class="name" type="date" [(ngModel)]="birth">
+        <button (click)="addUser()">Add</button>
+    </div>
+    <h1>Users</h1>
+    <div class="users">
+        <div *ngFor="let u of users; let i = index" class="user">
+            <p>Name: <span *ngIf="u.isSpan">{{ u.name | titlecase }}</span>
+                <input *ngIf="!u.isSpan" type="text" [(ngModel)]="u.name">
+            </p>
+            <p>Salary: $<span *ngIf="u.isSpan">{{ u.salary | salary }}</span>
+                <input *ngIf="!u.isSpan" type="number" [(ngModel)]="u.salary">
+            </p>
+            <p>Birthday: <span *ngIf="u.isSpan">{{ u.birth | date }}</span>
+                <input *ngIf="!u.isSpan" type="date" [(ngModel)]="u.birth">
+            </p>
+            <div class="undo-redo">
+                <button (click)="removeUser(i)">Delete</button>
+                <button (click)="editUser(u)">Edit</button>
+            </div>
+        </div>
+    </div>
+</section>

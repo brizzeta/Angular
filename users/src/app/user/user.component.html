@@ -6,7 +6,7 @@
         <button (click)="addUser()">Add</button>
     </div>
     <h1>Users</h1>
-    <div class="users">
+    <div class="users" *ngIf="users.length > 0">
         <div *ngFor="let u of users; let i = index" class="user">
             <p>Name: <span *ngIf="u.isSpan">{{ u.name | titlecase }}</span>
                 <input *ngIf="!u.isSpan" type="text" [(ngModel)]="u.name">

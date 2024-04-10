@@ -1,0 +1,29 @@
+<section>
+    <div class="sortByFacult">
+      Sort by faculty:
+      <select [(ngModel)]="selectedFaculty">
+        <option value="">All</option>
+        <option *ngFor="let faculty of uniqueFaculties" [value]="faculty">{{ faculty }}</option>
+      </select>
+    </div>
+    <div class="sortByGroup">
+      Sort by group:
+      <select [(ngModel)]="selectedGroup">
+        <option value="">All</option>
+        <option *ngFor="let group of groups" [value]="group.name">{{ group.name }}</option>
+      </select>
+    </div>
+    <div class="butt">
+      <button (click)="filterBySeats()">Filter by seats</button>
+      <button (click)="filterByTitle()">Filter by alphabet</button>
+      <button (click)="resetFilters()">Reset filters</button>
+    </div>
+    <div class="SectionCard">
+        <div class="card" *ngFor="let auditorium of (auditoriums | filterByFaculty: selectedFaculty | filterByGroup: selectedGroup : groups | filterByAlphabet: sortType)">
+            <p><span>Name:</span> {{ auditorium.name }}</p>
+            <p><span>Amount of seatd:</span> {{ auditorium.seats }}</p>
+            <p><span>Faculty:</span> {{ auditorium.faculty }}</p>
+        </div> 
+    </div>
+</section>
+  

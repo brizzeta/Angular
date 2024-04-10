@@ -1,0 +1,44 @@
+/* Styles for the sortByFacult div */
+.sortByFacult {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the sortByGroup div */
+  .sortByGroup {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the butt div */
+  .butt {
+    margin-bottom: 20px;
+  }
+  
+  .butt button {
+    margin-right: 10px;
+  }
+  
+  /* Styles for the SectionCard div */
+  .SectionCard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Styles for the card class */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(33.33% - 10px); /* Adjust according to your layout */
+    box-sizing: border-box;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  .card p span {
+    font-weight: bold;
+  }
+  

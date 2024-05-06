@@ -1,0 +1,35 @@
+<section>
+    <div class="forms">
+        <div>
+            <p>Name</p>
+            <input type="text" class="name" name="name" [(ngModel)]="name">
+        </div>
+        <div>
+            <p>Description</p>
+            <input type="text" class="description" name="description" [(ngModel)]="discription">
+        </div>
+        <div>
+            <p>Price</p>
+            <input type="number" class="price" name="price" [(ngModel)]="price">
+        </div>
+        <div>
+            <p>Discount</p>
+            <input type="number" class="price"  name="discount" [(ngModel)]="discount">
+        </div>
+        <button (click)="addProduct()">Add</button>
+    </div>
+    <hr class="underline">
+    <div class="info-section">
+        <div *ngFor="let products of products; let i = index">
+            <div class="info">
+                <p>{{products.name}}</p>
+                <p>{{products.discription}}</p>
+                <p>&euro;{{products.price}}</p>
+                <p>{{products.discount}} %</p>
+                <button (click)="editProduct(i)">Edit</button>
+                <button (click)="removeProduct(i)">Delete</button>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>

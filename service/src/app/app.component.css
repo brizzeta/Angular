@@ -1,0 +1,22 @@
+
+.butt{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.butt a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #908e8e;
+    font-weight: bold;
+}
+
+.butt a:hover{
+    color:black;
+    transition: 0.2s;
+}
+
+.butt a.active{
+    color: black;
+}

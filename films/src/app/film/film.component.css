@@ -1,0 +1,33 @@
+.film-card{
+    background-color: white;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    gap: 25px;
+    width: 50%;
+    align-items: center;
+}
+
+.film-card img{
+    width: 250px;
+    height: 400px;
+}
+
+.film-card .film-info button{
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    width: 100px;
+}
+
+.film-card .film-info button:hover{
+    background-color: rgb(223, 223, 223);
+    transition: 0.2s;
+}
+
+.film-card .film-info button:active{
+    background-color: rgb(194, 194, 194);
+}

@@ -1,0 +1,10 @@
+<div class="box">
+    <div *ngFor="let products of products" class="card">
+        <p>{{products.name}}</p>
+        <p>{{products.discription}}</p>
+        <div class="text">
+            <p>&euro; {{products.price}}</p>
+            <p>{{products.discount}}%</p>
+        </div>
+    </div>
+</div>

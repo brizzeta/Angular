@@ -1,0 +1,18 @@
+.container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+.btn{
+    margin-top: 25px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 5px;
+}

@@ -1,0 +1,73 @@
+<div class="container">
+    <form (ngSubmit) = "submitForm(form)" #form="ngForm">
+      <div class="form-group" [ngClass]="{'has-error':email.invalid && email.touched}">
+          <label for="email">Email</label>
+          <input 
+              type="email"
+              id="email"
+              class="form-control" 
+              ngModel
+              name="email"
+              #email="ngModel"
+              email
+              required>
+              <p *ngIf="email.invalid && email.touched">Введите корректный email</p>
+      </div>
+  
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input 
+            type="password"
+            id="pass"
+            class="form-control"
+            ngModel
+            name="pass" 
+            #pass="ngModel"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?\:{}|<>]).{8,}$"
+            required>
+            <p *ngIf="pass.invalid && pass.touched">Пароль может содержать от 8 и должен соддержать верхний и нижний регистр и спец символ</p>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirpass">Confirm Password</label>
+        <input 
+            type="password"
+            id="confirpass"
+            class="form-control"
+            ngModel
+            name="confirpass" 
+            #confirpass="ngModel"
+            required
+            appPasswordMatch="pass">
+      </div>
+
+      <div class="form-group">
+        <label for="">Language</label>
+        <select 
+          class="form-control"
+          ngModel
+          name="lang"
+          required>
+          <option value="en">En</option>
+          <option value="ua">UA</option>
+          <option value="fr">Fr</option>
+        </select>
+      </div>
+  
+      <div class="radio" *ngFor="let ans of answers">
+        <label for="">
+          <input 
+            type="radio" 
+            [value]="ans.type"
+            ngModel
+            name="answ"
+            required>{{ans.text}}
+        </label>
+      </div>
+  
+      <button 
+        class="btn btn-primary" 
+        type="submit"
+        [disabled]="!form.valid">Save</button>
+    </form>
+  </div>

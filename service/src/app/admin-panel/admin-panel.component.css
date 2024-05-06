@@ -1,0 +1,109 @@
+section{
+    margin-top: 25px;
+}
+
+.forms{
+    display: flex;
+    gap: 25px;
+    align-items:end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forms div{
+    width: 25%;
+}
+
+.forms div:nth-child(2){
+    width: 40%;
+}
+
+.forms div:nth-child(3){
+    width: 5%;
+}
+
+.forms div:nth-child(4){
+    width: 5%;
+}
+
+.underline{
+    margin-top: 25px;
+    width: 91%;
+    margin-left: 0;
+}
+
+
+.forms div .name{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border: 1px gray solid;
+    margin-top: 10px;
+}
+
+.forms div .description{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border: 1px gray solid;
+    margin-top: 10px;
+}
+
+.forms div .price{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border: 1px gray solid;
+    margin-top: 10px;
+}
+
+.forms div p{
+    margin: 0;
+}
+
+.forms button{
+    height: 25px;
+    width: 75px;
+    border: none;
+    background: black;
+    color: whitesmoke;
+}
+
+.forms button:hover{
+    background-color: rgb(59, 59, 59);
+    transition: 0.2s;
+}
+
+.forms button:active{
+    background-color:rgb(80, 80, 80) ;
+}
+
+.info-section{
+    margin-top: 50px;
+}
+
+.info{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.info p{
+    width: 250px;
+}
+
+.info button{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.info button:hover{
+    color: rgb(94, 94, 94);
+    transition: 0.2s;
+}
+
+.info button:active{
+    color: rgb(117, 117, 117);
+    transition: 0.2s;
+}
